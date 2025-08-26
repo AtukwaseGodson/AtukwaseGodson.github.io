@@ -74,6 +74,16 @@ const SKILLS = [
     items: ["Git", "GitHub", "Linux", "Figma", "Postman"]
   },
 ];
+<div className="flex flex-wrap gap-2">
+  {["Java", "Python", "JavaScript", "TypeScript", "PHP", "SQL", "HTML", "CSS", "C", "C#"].map(skill => (
+    <span
+      key={skill}
+      className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full shadow-sm hover:bg-blue-700 transition"
+    >
+      {skill}
+    </span>
+  ))}
+</div>
 
 // 🧰 FEATURED PROJECTS ——— Pull from your real work (edit links & text)
 const PROJECTS = [
